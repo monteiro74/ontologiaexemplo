@@ -1,0 +1,300 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/usuario/ontologies/2021/11/untitled-ontology-10#"
+     xml:base="http://www.semanticweb.org/usuario/ontologies/2021/11/untitled-ontology-10"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/usuario/ontologies/2021/11/untitled-ontology-10">
+        <rdfs:comment xml:lang="pt">observacao</rdfs:comment>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2021/11/untitled-ontology-10#admite_aceita -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/usuario/ontologies/2021/11/untitled-ontology-10#admite_aceita">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/usuario/ontologies/2021/11/untitled-ontology-10#escola"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/usuario/ontologies/2021/11/untitled-ontology-10#aluno"/>
+        <rdfs:comment xml:lang="pt">escola admite (ou aceita) aluno</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2021/11/untitled-ontology-10#aprende -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/usuario/ontologies/2021/11/untitled-ontology-10#aprende">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/usuario/ontologies/2021/11/untitled-ontology-10#aluno"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/usuario/ontologies/2021/11/untitled-ontology-10#disciplina"/>
+        <rdfs:comment xml:lang="pt">aluno aprende disciplina</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2021/11/untitled-ontology-10#emprega -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/usuario/ontologies/2021/11/untitled-ontology-10#emprega">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/usuario/ontologies/2021/11/untitled-ontology-10#escola"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/usuario/ontologies/2021/11/untitled-ontology-10#funcionario"/>
+        <rdfs:comment xml:lang="pt">escola emprega funcionario</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2021/11/untitled-ontology-10#ensina -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/usuario/ontologies/2021/11/untitled-ontology-10#ensina">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/usuario/ontologies/2021/11/untitled-ontology-10#professor"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/usuario/ontologies/2021/11/untitled-ontology-10#aluno"/>
+        <rdfs:comment xml:lang="pt">professor ensina (ministra conteudo) para aluno</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2021/11/untitled-ontology-10#aceitoStatus -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/usuario/ontologies/2021/11/untitled-ontology-10#aceitoStatus">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/usuario/ontologies/2021/11/untitled-ontology-10#aluno"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2021/11/untitled-ontology-10#alunoID -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/usuario/ontologies/2021/11/untitled-ontology-10#alunoID">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/usuario/ontologies/2021/11/untitled-ontology-10#aluno"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2021/11/untitled-ontology-10#disciplinaID -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/usuario/ontologies/2021/11/untitled-ontology-10#disciplinaID">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/usuario/ontologies/2021/11/untitled-ontology-10#disciplina"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2021/11/untitled-ontology-10#escolaID -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/usuario/ontologies/2021/11/untitled-ontology-10#escolaID">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/usuario/ontologies/2021/11/untitled-ontology-10#escola"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2021/11/untitled-ontology-10#funcionarioID -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/usuario/ontologies/2021/11/untitled-ontology-10#funcionarioID">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/usuario/ontologies/2021/11/untitled-ontology-10#funcionario"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2021/11/untitled-ontology-10#salario -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/usuario/ontologies/2021/11/untitled-ontology-10#salario">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/usuario/ontologies/2021/11/untitled-ontology-10#funcionario"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2021/11/untitled-ontology-10#administrativo -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/usuario/ontologies/2021/11/untitled-ontology-10#administrativo">
+        <owl:equivalentClass rdf:resource="http://www.semanticweb.org/usuario/ontologies/2021/11/untitled-ontology-10#tecnico"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/usuario/ontologies/2021/11/untitled-ontology-10#funcionario"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2021/11/untitled-ontology-10#aluno -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/usuario/ontologies/2021/11/untitled-ontology-10#aluno">
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/usuario/ontologies/2021/11/untitled-ontology-10#funcionario"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2021/11/untitled-ontology-10#biologia -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/usuario/ontologies/2021/11/untitled-ontology-10#biologia">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/usuario/ontologies/2021/11/untitled-ontology-10#disciplina"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2021/11/untitled-ontology-10#calouro -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/usuario/ontologies/2021/11/untitled-ontology-10#calouro">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/usuario/ontologies/2021/11/untitled-ontology-10#aluno"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2021/11/untitled-ontology-10#disciplina -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/usuario/ontologies/2021/11/untitled-ontology-10#disciplina"/>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2021/11/untitled-ontology-10#escola -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/usuario/ontologies/2021/11/untitled-ontology-10#escola"/>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2021/11/untitled-ontology-10#funcionario -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/usuario/ontologies/2021/11/untitled-ontology-10#funcionario"/>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2021/11/untitled-ontology-10#matematica -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/usuario/ontologies/2021/11/untitled-ontology-10#matematica">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/usuario/ontologies/2021/11/untitled-ontology-10#disciplina"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2021/11/untitled-ontology-10#professor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/usuario/ontologies/2021/11/untitled-ontology-10#professor">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/usuario/ontologies/2021/11/untitled-ontology-10#funcionario"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2021/11/untitled-ontology-10#rural -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/usuario/ontologies/2021/11/untitled-ontology-10#rural">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/usuario/ontologies/2021/11/untitled-ontology-10#escola"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2021/11/untitled-ontology-10#tecnico -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/usuario/ontologies/2021/11/untitled-ontology-10#tecnico">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/usuario/ontologies/2021/11/untitled-ontology-10#funcionario"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2021/11/untitled-ontology-10#urbana -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/usuario/ontologies/2021/11/untitled-ontology-10#urbana">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/usuario/ontologies/2021/11/untitled-ontology-10#escola"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2021/11/untitled-ontology-10#veterano -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/usuario/ontologies/2021/11/untitled-ontology-10#veterano">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/usuario/ontologies/2021/11/untitled-ontology-10#aluno"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2021/11/untitled-ontology-10#bill -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/usuario/ontologies/2021/11/untitled-ontology-10#bill">
+        <rdf:type rdf:resource="http://www.semanticweb.org/usuario/ontologies/2021/11/untitled-ontology-10#professor"/>
+        <emprega rdf:resource="http://www.semanticweb.org/usuario/ontologies/2021/11/untitled-ontology-10#bill"/>
+        <ensina rdf:resource="http://www.semanticweb.org/usuario/ontologies/2021/11/untitled-ontology-10#introbio"/>
+        <funcionarioID rdf:datatype="http://www.w3.org/2001/XMLSchema#int">333</funcionarioID>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2021/11/untitled-ontology-10#escolaABCDE -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/usuario/ontologies/2021/11/untitled-ontology-10#escolaABCDE">
+        <rdf:type rdf:resource="http://www.semanticweb.org/usuario/ontologies/2021/11/untitled-ontology-10#escola"/>
+        <admite_aceita rdf:resource="http://www.semanticweb.org/usuario/ontologies/2021/11/untitled-ontology-10#gustavo"/>
+        <emprega rdf:resource="http://www.semanticweb.org/usuario/ontologies/2021/11/untitled-ontology-10#bill"/>
+        <escolaID rdf:datatype="http://www.w3.org/2001/XMLSchema#int">5678</escolaID>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2021/11/untitled-ontology-10#gustavo -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/usuario/ontologies/2021/11/untitled-ontology-10#gustavo">
+        <rdf:type rdf:resource="http://www.semanticweb.org/usuario/ontologies/2021/11/untitled-ontology-10#aluno"/>
+        <aprende rdf:resource="http://www.semanticweb.org/usuario/ontologies/2021/11/untitled-ontology-10#introbio"/>
+        <alunoID rdf:datatype="http://www.w3.org/2001/XMLSchema#int">111</alunoID>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2021/11/untitled-ontology-10#introbio -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/usuario/ontologies/2021/11/untitled-ontology-10#introbio">
+        <rdf:type rdf:resource="http://www.semanticweb.org/usuario/ontologies/2021/11/untitled-ontology-10#biologia"/>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
